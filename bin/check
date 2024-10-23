@@ -10,7 +10,7 @@ import sys
 
 
 IGNORE = ["cli", "console", "daemon", "service", "modules/srv"]
-NAME = "nah"
+NAME = "botl"
 
 
 def ignore(txt):
