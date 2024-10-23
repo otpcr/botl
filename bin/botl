@@ -1,0 +1,14 @@
+#!/bin/bash
+export PYTHONPATH="."
+
+
+if [ "$1" = "-c" ]; then
+    python3 -m botl.console $* ;
+    shift 1
+elif [ "$1" = "-d" ]; then
+    python3 -m botl.daemon $* ;
+elif [ "$1" = "-s" ]; then
+    python3 -m botl.service $* ;
+else
+    python3 -m botl.cli $* ;
+fi
